@@ -1,0 +1,35 @@
+@mixin retina {
+  @media screen and (max-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: 1925px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin note {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 577px) {
+    @content;
+  }
+}

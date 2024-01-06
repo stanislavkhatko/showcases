@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import '_mixins.scss';
+
+//Base
+html {
+  height: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+//Classes
+.hidden {
+  display: none !important;
+}
+
+.vis-hidden {
+  visibility: hidden
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: $base-font;
+  color: $dark-grey;
+}
+
+input, textarea, button {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+//Reusable
+.router-link-inherit {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.expand {
+  transition: transform 0.3s ease;
+}
+
+.expanded {
+  transform: rotate(180deg);
+}
+
+// Plugins
+@import '_plugins.scss';
+

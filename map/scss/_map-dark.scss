@@ -1,0 +1,428 @@
+html.theme-dark {
+  .page-map {
+
+    & .header {
+      background-color: var(--dark-second-bg);
+
+      &-logo {
+
+        & svg {
+          fill: var(--fonts-color-light);
+        }
+
+        &:hover {
+          & svg {
+            fill: var(--states-color-dark-14);
+          }
+        }
+      }
+
+      &-title {
+        color: var(--fonts-color-light);
+
+        & svg {
+          fill: var(--red-bg-2);
+        }
+
+        &:hover {
+          & svg {
+            fill: var(--red-bg-1);
+          }
+        }
+
+        &-tooltip {
+          &--active {
+            color: var(--fonts-color-light);
+            background-color: var(--fonts-color-dark-1);
+
+            &:before {
+              border: 10px solid transparent;
+              border-bottom: 8px solid var(--fonts-color-dark-1);
+            }
+          }
+        }
+      }
+
+      &--consultation {
+        color: var(--light-bg);
+        background-color: var(--red-bg-2);
+
+        &:hover {
+          background-color: var(--red-bg-4);
+        }
+      }
+    }
+
+    & .main {
+      &-sidebar {
+        background-color: var(--states-color-dark-6);
+        box-shadow: none;
+
+        @include desktop-laptop {
+          border-top: 1px solid var(--states-color-dark-8);
+          background-color: var(--states-color-dark-6);
+        }
+
+        &-laptop {
+          @include desktop-laptop {
+            & .title {
+              color: var(--fonts-color-light);
+            }
+
+            & svg {
+              fill: transparent;
+              stroke: var(--fonts-color-light);
+            }
+          }
+        }
+
+        &-state {
+          @include phone {
+            background-color: var(--states-color-dark-6);
+          }
+          & a {
+            color: var(--fonts-color-light);
+          }
+
+          & p {
+            color: var(--states-color-dark-12);
+          }
+
+          & .title {
+            color: var(--fonts-color-light);
+          }
+
+          & .state {
+            &-top {
+              &-block {
+                &--link {
+                  border: solid 1px var(--fonts-color-light);
+                  color: var(--fonts-color-light);
+                  background: var(--states-color-dark-13);
+                }
+
+                &--text {
+                  color: var(--fonts-color-light);
+                }
+              }
+
+              &-title {
+                color: var(--fonts-color-light);
+              }
+
+              &-close {
+                & svg {
+                  fill: var(--states-color-dark-11);
+                  stroke: var(--fonts-color-light);
+                }
+              }
+            }
+
+            &-bottom {
+              &--text {
+                color: var(--fonts-color-light);
+              }
+
+              &-block {
+                &--link {
+                  border: 1px solid transparent;
+                  background: var(--fonts-color-light );
+                  color: var(--fonts-color-light-3);
+                }
+
+                & svg {
+                  fill: var(--states-color-dark-18);
+                  stroke: var(--fonts-color-light);
+                }
+              }
+            }
+          }
+        }
+
+        &.active {
+          @include phone {
+            & .main-sidebar-state, .main-sidebar-laptop {
+              background-color: var(--dark-bg);
+            }
+          }
+        }
+      }
+
+      &-content {
+        background-color: var(--dark-bg);
+
+        &-top {
+          & .mode-btn {
+            & svg {
+              stroke: var(--states-color-dark-17);
+              fill: var(--states-color-dark-15);
+
+              &:hover {
+                fill: var(--states-color-dark-16);
+              }
+            }
+          }
+
+          &-title {
+            color: var(--fonts-color-light);
+
+            & .title-tooltip {
+              &--active {
+                  background-color: var(--fonts-color-dark-1);
+
+                &:before {
+                  border: 8px solid transparent;
+                  border-bottom: 5px solid var(--fonts-color-dark-1);
+                }
+              }
+            }
+            & svg {
+              fill: var(--red-bg);
+            }
+          }
+
+          &-filter {
+            & svg {
+              stroke: var(--fonts-color-light);
+              fill: var(--states-color-dark-10);
+
+              &:hover {
+                stroke: var(--fonts-color-light);
+                fill: var(--states-color-dark-15);
+              }
+            }
+
+            & span {
+              & .item {
+                color: var(--fonts-color-dark-3);
+                border: 1px solid var(--states-color-dark-19);
+                background-color: var(--states-color-light-18);
+                border-right: none;
+
+                &--value {
+                  &:before {
+                    border-top: 1.5px solid transparent;
+                    border-left: 1.5px solid transparent;
+                    border-right: 1.5px solid var(--fonts-color-dark-3);
+                    border-bottom: 1.5px solid var(--fonts-color-dark-3);
+                  }
+                }
+
+                &:hover {
+                  background-color: var(--states-color-light-12);
+                }
+
+                &.active {
+                  border: 1px solid var(--states-color-light-19);
+                  background-color: var(--states-color-light-19);
+                }
+              }
+            }
+          }
+
+        }
+
+        &-bottom {
+          &-designed {
+            color: var(--states-color-dark-9);
+          }
+        }
+
+        & .update {
+          color: var(--fonts-color-light);
+
+          & svg {
+            fill: var(--fonts-color-light);
+          }
+        }
+
+        & .scale {
+          color: var(--states-color-dark-9);
+        }
+
+        & .popup {
+          &-title {
+            font-family: 'Helvetica-Now-Display-Bold';
+            color: var(--fonts-color-dark-4);
+          }
+
+          &-star {
+            & svg {
+              fill: var(--red-bg);
+            }
+          }
+
+          &-bottom {
+            & .title {
+              color: var(--fonts-color-light-1);
+            }
+
+            & .text {
+              color: var(--fonts-color-dark-4);
+
+              &.featured {
+                color: var(--red-bg-2);
+              }
+            }
+
+            &-left {
+              & .text {
+                color: var(--fonts-color-dark-4);
+              }
+            }
+          }
+        }
+
+        & .tt_sm {
+          background-color: var(--light-bg);
+        }
+      }
+    }
+
+    & .top-states {
+      &-inner {
+        border-bottom: 1px solid var(--states-color-dark-8);
+      }
+
+      &--title {
+        color: var(--fonts-color-light);
+      }
+
+      &--close {
+        fill: var(--states-color-dark-11);
+        stroke: var(--fonts-color-light);
+      }
+
+      &-item {
+        &:after {
+          background-color: var(--states-color-dark-8);
+        }
+
+        &:last-child {
+          & .top-states-inner {
+            border-bottom: 1px solid var(--states-color-dark-7);
+          }
+        }
+
+        &.hovered {
+          background-color: var(--states-color-dark-8);
+
+          & .top-states-inner {
+            border-bottom: 1px solid transparent;
+          }
+
+          @include phone {
+            background-color: transparent;
+
+            & .top-states-inner {
+              border-bottom: 1px solid var(--states-color-dark-8);
+            }
+          }
+
+        }
+
+        & .item-rate {
+          & svg {
+            fill: var(--red-bg);
+          }
+        }
+
+        & .item-name {
+          color: var(--fonts-color-light);
+        }
+
+        & .item-participation {
+          &--title {
+            color: var(--fonts-color-light-1);
+          }
+
+          &--value {
+            color: var(--fonts-color-light);
+
+            @include phone {
+              color: var(--fonts-color-light-1);
+            }
+          }
+        }
+
+        & .item-ranking {
+          &--title {
+            color: var(--fonts-color-light-1);
+          }
+
+          &--value {
+            color: var(--red-bg-2);
+          }
+        }
+      }
+
+    }
+
+    & .other-states {
+
+      &-item {
+        color: var(--fonts-color-light);
+
+        &:after {
+          background-color: var(--states-color-dark-8);
+        }
+
+        &-inner {
+          border-bottom: 1px solid var(--states-color-dark-8);
+        }
+
+        &.hovered {
+          background-color: var(--states-color-dark-8);
+
+          & .other-states-item-inner {
+            border-bottom: 1px solid transparent;
+          }
+
+          @include phone {
+            background-color: transparent;
+
+            & .other-states-inner {
+              border-bottom: 1px solid var(--states-color-dark-8);
+            }
+          }
+        }
+
+        & .item-name {
+          color: var(--fonts-color-light);
+
+          @include phone {
+            color: var(--fonts-color-light-1);
+          }
+        }
+
+        & .item-participation {
+          &--title {
+            color: var(--fonts-color-light-1);
+          }
+
+          &--value {
+            color: var(--fonts-color-light);
+
+            @include phone {
+              color: var(--fonts-color-light-1);
+            }
+          }
+        }
+
+        & .item-ranking {
+          &--title {
+            color: var(--fonts-color-light-1);
+          }
+
+          &--value {
+            color: var(--fonts-color-light);
+
+            @include phone {
+              color: var(--fonts-color-light-1);
+            }
+          }
+        }
+        }
+    }
+  }
+}

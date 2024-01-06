@@ -1,0 +1,137 @@
+:root {
+  // Light theme variables
+  --light-bg: white;
+
+  --fonts-color-dark: #1D3652;
+  --fonts-color-dark-1: #395F8A;
+  --fonts-color-dark-2: #87A0C0;
+  --fonts-color-dark-3: #1D4263;
+  --fonts-color-dark-4: #074793;
+
+  --states-color-light-0: #F3F8FD;
+  --states-color-light-1: #DEEFFF;
+  --states-color-light-2: #C4E3FF;
+  --states-color-light-3: #A6CDF0;
+  --states-color-light-4: #8CBEED;
+  --states-color-light-5: #68A3DB;
+
+  --states-color-light-6: #E7EFF7;
+  --states-color-light-7: #DCE7F3;
+  --states-color-light-8: #D8E5F5;
+  --states-color-light-9: #E8F1FB;
+  --states-color-light-10: #FCFDFF;
+  --states-color-light-11: #EFF4F9;
+  --states-color-light-12: #DCEBF9;
+  --states-color-light-13: #C5DCF2;
+  --states-color-light-14: #E0EBF5;
+  --states-color-light-15: #6794C7;
+  --states-color-light-16: #F6F9FE;
+  --states-color-light-17: #E8EFF7;
+  --states-color-light-18: #F5F5F5;
+  --states-color-light-19: #A8C3E3;
+  --states-color-light-20: #2B5795;
+  --states-color-light-hover: #4186D7;
+  --states-color-light-active: #5B9FDF;
+  --states-color-light-disabled: #DBE9F7;
+  --states-color-light-disabled-font: #B3CAE7;
+
+  // Dark theme variables
+  --dark-second-bg: #1D3652;
+  --fonts-color-light: #EEF1F2;
+  --fonts-color-light-1: #8EA7C6;
+  --fonts-color-light-2: #1D3652;
+  --fonts-color-light-3: #071929;
+
+  --states-color-dark-0: #0A1C2D;
+  --states-color-dark-1: #0D2746;
+  --states-color-dark-2: #0B305A;
+  --states-color-dark-3: #093A73;
+  --states-color-dark-4: #134683;
+  --states-color-dark-5: #1E579A;
+  --states-color-dark-hover: #2C76CD;
+  --states-color-dark-active: #2C76CD;
+  --states-color-dark-disabled: #0A1F39;
+  --states-color-dark-disabled-font: #273E5A;
+
+  --states-color-dark-6: #10243A;
+  --states-color-dark-7: #EEF2F7;
+  --states-color-dark-8: #263D55;
+  --states-color-dark-9: #7B92AD;
+  --states-color-dark-10: #172A3C;
+  --states-color-dark-11: #293D54;
+  --states-color-dark-12: #A9C1DE;
+  --states-color-dark-13: #1B2E43;
+  --states-color-dark-14: #B3CBE9;
+  --states-color-dark-15: #243649;
+  --states-color-dark-16: #34485C;
+  --states-color-dark-17: #859EBD;
+  --states-color-dark-18: #1D3148;
+  --states-color-dark-19: #D0DAE5;
+
+  --dark-bg: #0A1C2D;
+
+  // Global color variables
+  --red-bg: #F07D6B;
+  --red-bg-1: #E3715F;
+  --red-bg-2: #E98B7D;
+  --red-bg-3: #F39688;
+  --red-bg-4: #D67C6E;
+  --blue-bg: #D5E8F9;
+}
+
+// Responsive breakpoints. "Include media" settings.
+
+$desktop-retina: 2560px;
+$desktop-default: 1920px;
+$desktop-notebook: 1440px;
+$desktop-laptop: 1024px;
+$tablet: 768px;
+$phone: 640px;
+
+@mixin desktop-retina {
+  @media screen and (max-width: $desktop-retina) {
+    @content;
+  }
+}
+
+@mixin desktop-default {
+  @media screen and (max-width: $desktop-default) {
+    @content;
+  }
+}
+
+@mixin desktop-notebook {
+  @media screen and (max-width: $desktop-notebook) {
+    @content;
+  }
+}
+
+@mixin desktop-laptop {
+  @media screen and (max-width: $desktop-laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin clickZone {
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+}
+
+@import "~simplebar";
+@import "map-fonts";
+@import "map";
+@import "map-dark";
+@import "map-light";

@@ -1,0 +1,15 @@
+.page-map {
+  & .icon-info {
+    fill: var(--red-bg);
+    max-width: 20px;
+    max-height: 20px;
+    will-change: fill;
+    transition: fill ease-out .3s;
+  }
+
+  & .logo {
+    fill: var(--fonts-color-dark);
+    will-change: fill;
+    transition: fill ease-out .3s;
+  }
+}
